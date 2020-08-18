@@ -8,6 +8,7 @@ require 'pry'
 class Scraper
 
   def self.scrape_index_page(index_url)
+<<<<<<< HEAD
     html = open(index_url)
     doc = Nokogiri::HTML(html)
     student_cards = doc.css(".student-card a")
@@ -17,6 +18,15 @@ class Scraper
         :profile_url => element.attr('href')
       }
     end
+=======
+    
+
+    
+    binding.pry
+
+
+    
+>>>>>>> 7d13c07695f37fdd9ec065a7f92de4257ae4d32c
   end
 
   def self.scrape_profile_page(profile_url)
